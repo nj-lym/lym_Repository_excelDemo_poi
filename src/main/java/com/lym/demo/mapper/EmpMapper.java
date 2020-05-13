@@ -1,11 +1,11 @@
 package com.lym.demo.mapper;
 
 import com.lym.demo.domain.Emp;
-import org.apache.ibatis.annotations.Mapper;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 
-@Mapper
+@Component("empMapper")
 public interface EmpMapper {
     int deleteByPrimaryKey(Integer empno);
 
